@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_animating_button_menu_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2v6-EM-kel" customClass="RoundButton" customModule="ios_animating_button_menu_demo" customModuleProvider="target">
+                                <rect key="frame" x="175" y="652" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="Wva-Wx-Bkq"/>
+                                    <constraint firstAttribute="height" constant="64" id="YzN-Xm-qiU"/>
+                                </constraints>
+                                <state key="normal" image="menu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapSelectMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DLu-AW-3q6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msY-d0-ZZZ" customClass="RoundButton" customModule="ios_animating_button_menu_demo" customModuleProvider="target">
+                                <rect key="frame" x="175" y="498" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="L8x-js-Omn"/>
+                                    <constraint firstAttribute="width" constant="64" id="ruv-u0-38H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                <state key="normal" title="I">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapSelectedInstagram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dwT-NL-Pmq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzb-8b-bfQ" customClass="RoundButton" customModule="ios_animating_button_menu_demo" customModuleProvider="target">
+                                <rect key="frame" x="54" y="582" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="mmr-l6-37m"/>
+                                    <constraint firstAttribute="width" constant="64" id="vh1-0F-N2E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                <state key="normal" title="T">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapSelectedTwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Yx-Z0-opq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwp-pi-Z0L" customClass="RoundButton" customModule="ios_animating_button_menu_demo" customModuleProvider="target">
+                                <rect key="frame" x="296" y="582" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="LhG-GR-SfZ"/>
+                                    <constraint firstAttribute="width" constant="64" id="yY0-SE-p5o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                <state key="normal" title="F">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapSelectedFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dDZ-ga-EjR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jwp-pi-Z0L" secondAttribute="trailing" priority="500" constant="54" id="0b6-Tf-YpI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2v6-EM-kel" secondAttribute="bottom" constant="20" id="B7P-sm-Z6w"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vzb-8b-bfQ" secondAttribute="bottom" priority="500" constant="90" id="SdR-fe-Lrh"/>
+                            <constraint firstItem="vzb-8b-bfQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" priority="500" constant="54" id="aqS-Us-7QL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jwp-pi-Z0L" secondAttribute="bottom" priority="500" constant="90" id="eVl-eE-eAv"/>
+                            <constraint firstItem="2v6-EM-kel" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eeV-y8-DMe"/>
+                            <constraint firstItem="2v6-EM-kel" firstAttribute="top" secondItem="msY-d0-ZZZ" secondAttribute="bottom" priority="500" constant="90" id="fxj-De-WuB"/>
+                            <constraint firstItem="msY-d0-ZZZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gjV-yg-Krz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="facebookButton" destination="jwp-pi-Z0L" id="4uA-O0-JSE"/>
+                        <outlet property="instagramButton" destination="msY-d0-ZZZ" id="a0Q-yK-Asx"/>
+                        <outlet property="menuButton" destination="2v6-EM-kel" id="yX6-qu-J6z"/>
+                        <outlet property="twitterButton" destination="vzb-8b-bfQ" id="YDe-70-rSC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu" width="32" height="32"/>
+    </resources>
+</document>
